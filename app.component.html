@@ -1,0 +1,13 @@
+<!--<button routerLink="/home" routerlinkActive="active">Valider</button>
+<button routerLink="/home2" routerlinkActive="active">Submit</button>
+
+{{title}}
+<router-outlet></router-outlet>
+<app-home [myTitle]="title"></app-home>
+<app-home2 [myTitle]="title"></app-home2>-->
+<div>
+    <h1>Parent component</h1>
+    <p>{{ childData }}</p>
+    <app-home (a)="parentData($event)"></app-home>
+    <app-home2 (a)="parentData($event)"></app-home2>
+</div>
